@@ -1,0 +1,3 @@
+﻿Create Fever debuff
+Create Medication items
+Actually start on TheOrderOfSlime
