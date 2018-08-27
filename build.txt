@@ -1,3 +1,3 @@
-author = Agrair
+author = Agrair, Da Alp
 version = 0.1
 displayName = The Royal Order
