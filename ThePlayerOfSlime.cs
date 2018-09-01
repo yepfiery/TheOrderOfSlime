@@ -54,13 +54,8 @@ namespace TheOrderOfSlime
                 }
                 else
                 {
-                    switch (Main.rand.Next(1))
-                    {
-                        default:
-                            //player.AddBuff(mod.BuffType("Fever"), 60);
-                            fever = true;
-                            break;
-                    }
+                    //player.AddBuff(mod.BuffType("Fever"), 60);
+                    //fever = true;
                 }
                 cold = false;
             }
