@@ -1,12 +1,11 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
-using Terraria.Localization;
-using Terraria.ModLoader;
+﻿using Terraria.ModLoader;
 
 namespace TheOrderOfSlime
 {
     class TheWorldOfSlime : ModWorld
     {
+        public static bool downedZephrShip = false;
+        public static bool downedZephrRaid = false;
         /*
         public static bool raid = false;
         public static bool raided = false;
