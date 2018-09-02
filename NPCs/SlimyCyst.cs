@@ -29,8 +29,8 @@ namespace TheOrderOfSlime.NPCs
         {
             for (int i = 0; i < Main.rand.Next(3, 8); i++) //this makes three to eight slimes spawn, I think
             {
-                Vector2 pos = new Vector2(npc.Center.X + Main.rand.NextFloat(-5, 5), npc.Center.Y + Main.rand.NextFloat(5));
-                Vector2 direc = pos;
+                Microsoft.Xna.Framework.Vector2 pos = new Microsoft.Xna.Framework.Vector2(npc.Center.X + Main.rand.NextFloat(-5, 5), npc.Center.Y + Main.rand.NextFloat(5));
+                Microsoft.Xna.Framework.Vector2 direc = pos;
                 direc.Normalize(); //normalizing a vector will result in the vector becoming a unit direction. multiply this by a speed
                 Dust.NewDust(pos, npc.width, npc.height, 0, direc.X, direc.Y, 0, new Color(18, 204, 52));
             }

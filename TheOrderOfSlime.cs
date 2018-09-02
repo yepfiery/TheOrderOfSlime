@@ -1,3 +1,4 @@
+using Microsoft.Xna.Framework;
 using System;
 using Terraria.ModLoader;
 
@@ -26,8 +27,25 @@ namespace TheOrderOfSlime
             if (bossChecklist != null)
             {
                 bossChecklist.Call("AddBossWithInfo", "Ship of Zephr", 7.3f, (Func<bool>)(() => TheWorldOfSlime.downedZephrShip), "Multiple will spawn during the Zephr Raid event.");
-                bossChecklist.Call("AddEvent", "Zephr Raid", 7.2, (Func<bool>)(() => TheWorldOfSlime.downedZephrRaid), "Will spawn randomly during the day after a mechanical boss has been defeated.");
+                bossChecklist.Call("AddEvent", "Zephr Raid", 7.2, (Func<bool>)(() => TheWorldOfSlime.downedZephrRaid), "Travel to a Sky Island during the day after a mechanical boss has been defeated.");
             }
+        }
+    }
+    public class M
+    {
+        public static Vector2 Velocity(Vector2 a, Vector2 b, float speed = 1f)
+        {
+            Vector2 c;
+            c = b - a;
+            c.Normalize();
+            return c * speed;
+        }
+        public static float SpeedCalc(Vector2 velocity)
+        {
+            Vector2 velocity0 = velocity;
+            velocity0.Normalize();
+            Vector2 speedv =  velocity0 / velocity; 
+            return (speedv.X + speedv.Y) / 2;
         }
     }
 }
