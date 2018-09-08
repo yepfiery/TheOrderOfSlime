@@ -1,4 +1,5 @@
 ﻿using Terraria.ModLoader;
+using Microsoft.Xna.Framework; 
 
 namespace TheOrderOfSlime
 {
@@ -6,6 +7,7 @@ namespace TheOrderOfSlime
     {
         public static bool downedZephrShip = false;
         public static bool downedZephrRaid = false;
+        
         /*
         public static bool raid = false;
         public static bool raided = false;
